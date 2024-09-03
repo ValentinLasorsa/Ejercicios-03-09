@@ -19,10 +19,10 @@ input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
  #3
 print("Ejercicio 3")
-numeros=[5,3,8,7,9,10,2,4,1,17]
-for u in numeros:
-  if u >4:
-   print(u,"es mayor a 4")
+for u in range(10):
+  num1=int(input(f"Ingrese el {u+1}° número: "))
+  if num1 >4:
+   print(num1,"es mayor a 4")
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 #4

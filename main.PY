@@ -39,18 +39,20 @@ for a in range(15):
   nom=input("Ingrese nombre del alumno ")
   nota=int(input("Ingrese nota del alumno "))
   if nota >=7:
-    print(nom,"tiene una nota mayor que 7")
+    print(nom,"tiene una nota mayor o igual que 7")
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
 
 
 #5
 print("Ejercicio 5")
-nums=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+#nums=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 menores=0
-for numero in nums:
+for s in range(20):
+  numero=int(input("Ingrese nota del alumno "))
   if numero <15:
     menores=menores+1
+print("Los números menores a 15 fueron",menores)
 print("El porcentaje menor a 15 fue:",(menores*100)/20,"%")
 input("\033[1mPresione enter para continuar\033[0m")
 os.system('cls')
